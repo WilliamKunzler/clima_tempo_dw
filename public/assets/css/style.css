@@ -1,0 +1,136 @@
+:root {
+    --cor-fundo-inicial: #121B2C;
+    --cor-fundo-final: #2B4161;
+    --cor-superficie-elevada: #1B222E;
+    --cor-superficie-card: #181E29;
+    --gradiente-fundo: linear-gradient(135deg, var(--cor-fundo-inicial), var(--cor-fundo-final));
+
+    --cor-texto-principal: #E6EBF2;
+    --cor-texto-destaque: #FFFFFF;
+    --cor-texto-secundario: #9AA6B6;
+
+    --cor-destaque: #5AA9FF;
+    --cor-precipitacao: #2F7FD8;
+    --cor-temperatura: #F39C33;
+    --cor-sensacao-termica: #8E7CF0;
+    --cor-qualidade-ar: #2ECC71;
+
+    --fonte-base: "Segoe UI", system-ui, sans-serif;
+
+    --peso-light: 300;
+    --peso-regular: 400;
+    --peso-semibold: 600;
+    --peso-bold: 700;
+
+    --fs-temperatura: 5rem;
+    --fs-metricas: 1.8rem;
+    --fs-titulo-cidade: 1.7rem;
+    --fs-condicao: 1.25rem;
+    --fs-titulo-secao: 1.15rem;
+    --fs-marca: 1.15rem;
+    --fs-descricao: 1.019rem;
+    --fs-corpo: 0.9375rem;
+    --fs-auxiliar-lg: 0.881rem;
+    --fs-auxiliar-sm: 0.75rem;
+
+    --lh-temperatura: 1;
+    --lh-compacta: 1.2;
+    --lh-padrao: 1.45;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--fonte-base);
+    font-size: var(--fs-corpo);
+    font-weight: var(--peso-regular);
+    line-height: var(--lh-padrao);
+    color: var(--cor-texto-principal);
+    background: var(--cor-fundo-inicial) var(--gradiente-fundo) fixed;
+}
+
+h1, h2, h3 {
+    color: var(--cor-texto-destaque);
+    font-weight: var(--peso-semibold);
+    line-height: var(--lh-compacta);
+}
+
+h1 { font-size: var(--fs-titulo-cidade); }
+h2 { font-size: var(--fs-titulo-secao); }
+
+.texto-temperatura {
+    font-size: var(--fs-temperatura);
+    font-weight: var(--peso-light);
+    line-height: var(--lh-temperatura);
+}
+
+.texto-metrica {
+    font-size: var(--fs-metricas);
+    font-weight: var(--peso-semibold);
+    line-height: var(--lh-padrao);
+}
+
+.texto-titulo-cidade {
+    font-size: var(--fs-titulo-cidade);
+    font-weight: var(--peso-semibold);
+    line-height: var(--lh-compacta);
+}
+
+.texto-condicao {
+    font-size: var(--fs-condicao);
+    font-weight: var(--peso-semibold);
+    line-height: var(--lh-padrao);
+}
+
+.texto-titulo-secao {
+    font-size: var(--fs-titulo-secao);
+    font-weight: var(--peso-semibold);
+    line-height: var(--lh-compacta);
+}
+
+.texto-descricao {
+    font-size: var(--fs-descricao);
+    font-weight: var(--peso-regular);
+    line-height: var(--lh-padrao);
+}
+
+.texto-corpo {
+    font-size: var(--fs-corpo);
+    font-weight: var(--peso-regular);
+    line-height: var(--lh-padrao);
+}
+
+.texto-auxiliar {
+    font-size: var(--fs-auxiliar-lg);
+    font-weight: var(--peso-regular);
+    line-height: var(--lh-padrao);
+    color: var(--cor-texto-secundario);
+}
+
+.texto-auxiliar-sm {
+    font-size: var(--fs-auxiliar-sm);
+    font-weight: var(--peso-regular);
+    line-height: var(--lh-padrao);
+    color: var(--cor-texto-secundario);
+}
+
+.texto-marca {
+    font-size: var(--fs-marca);
+    font-weight: var(--peso-bold);
+    line-height: var(--lh-padrao);
+    color: var(--cor-texto-destaque);
+}
+
+.cor-secundaria     { color: var(--cor-texto-secundario); }
+.cor-destaque       { color: var(--cor-destaque); }
+.cor-precipitacao   { color: var(--cor-precipitacao); }
+.cor-temperatura    { color: var(--cor-temperatura); }
+.cor-sensacao       { color: var(--cor-sensacao-termica); }
+.cor-qualidade-ar   { color: var(--cor-qualidade-ar); }
