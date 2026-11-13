@@ -6,10 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima Tempo</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
 
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="marca">
+                <i data-lucide="cloud" class="icone" aria-hidden="true"></i>
+                <span class="texto-marca">ClimaTempo</span>
+            </a>
+
+            <form class="busca busca-pequena" role="search">
+                <i data-lucide="search" class="icone-busca" aria-hidden="true"></i>
+                <input type="search" placeholder="Pesquisar cidade" aria-label="Pesquisar cidade">
+            </form>
+
+            <nav class="menu">
+                <a href="pages/principal.html">Previsão</a>
+                <a href="pages/planos.html">Plano</a>
+                <a href="pages/login.html" class="botao-contorno">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h1 class="hero-titulo">Boa noite. Como está o tempo?</h1>
+
+            <form class="busca busca-grande" role="search">
+                <i data-lucide="search" class="icone-busca" aria-hidden="true"></i>
+                <input type="search" placeholder="Pesquisar cidade" aria-label="Pesquisar cidade">
+            </form>
+
+            <ul class="atalhos">
+                <li>
+                    <a href="pages/principal.html" class="atalho">
+                        <span class="atalho-icone">
+                            <i data-lucide="cloud-sun" aria-hidden="true"></i>
+                        </span>
+                        Previsão
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="atalho">
+                        <span class="atalho-icone">
+                            <i data-lucide="newspaper" aria-hidden="true"></i>
+                        </span>
+                        Notícias
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/planos.html" class="atalho">
+                        <span class="atalho-icone">
+                            <i data-lucide="layout-grid" aria-hidden="true"></i>
+                        </span>
+                        Plano
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="atalho">
+                        <span class="atalho-icone">
+                            <i data-lucide="star" aria-hidden="true"></i>
+                        </span>
+                        Favoritas
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="feed">
+            <div class="feed-cabecalho">
+                <h2 class="texto-titulo-secao">Meu feed</h2>
+                <button type="button" class="filtro texto-auxiliar">Para você <i data-lucide="chevron-down" class="icone-filtro" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="feed-grade">
+
+                <article class="card card-clima">
+                    <div class="card-clima-topo">
+                        <h3 class="card-clima-cidade">Ceará, PI</h3>
+                        <span class="texto-auxiliar">Clima</span>
+                    </div>
+
+                    <div class="card-clima-temperatura">
+                        <i data-lucide="cloud" class="icone-clima" aria-hidden="true"></i>
+                        <span class="texto-temperatura">26°C</span>
+                    </div>
+
+                    <p class="texto-corpo">Algumas nuvens · Sensação de 26°</p>
+                    <p class="texto-corpo">Máx. 26° · Mín. 26°</p>
+                    <p class="texto-auxiliar-sm card-clima-atualizado">Atualizado às 20:57 · Horário local</p>
+
+                    <a href="pages/principal.html" class="botao-primario">Ver previsão</a>
+                </article>
+
+                <article class="card card-noticia">
+                    <div class="imagem-placeholder">
+                        <i data-lucide="image" aria-hidden="true"></i>
+                        <span class="texto-auxiliar">Imagem da notícia</span>
+                    </div>
+                    <div class="card-noticia-conteudo">
+                        <p class="texto-auxiliar">Notícias do tempo · há 25 min</p>
+                        <h3 class="card-titulo">Tempo firme marca o início da semana no Nordeste</h3>
+                        <p class="texto-auxiliar">Veja os destaques e acompanhe as informações da sua região.</p>
+                    </div>
+                </article>
+
+                <article class="card card-noticia">
+                    <div class="imagem-placeholder">
+                        <i data-lucide="image" aria-hidden="true"></i>
+                        <span class="texto-auxiliar">Imagem da notícia</span>
+                    </div>
+                    <div class="card-noticia-conteudo">
+                        <p class="texto-auxiliar">Cotidiano · há 1 hora</p>
+                        <h3 class="card-titulo">Veja como se preparar para os dias de calor</h3>
+                        <p class="texto-auxiliar">Veja os destaques e acompanhe as informações da sua região.</p>
+                    </div>
+                </article>
+
+                <article class="card card-anuncio">
+                    <span class="etiqueta">Anúncio</span>
+                    <div class="imagem-placeholder imagem-anuncio">
+                        <i data-lucide="image" aria-hidden="true"></i>
+                        <span class="texto-auxiliar">Espaço publicitário</span>
+                    </div>
+                    <h3 class="card-titulo">Conteúdo patrocinado</h3>
+                    <p class="texto-auxiliar">Publicidade de exemplo · Parceiro</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="assets/js/lucide.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
