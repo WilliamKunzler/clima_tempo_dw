@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos - Clima Tempo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/planos.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="../index.html" class="marca">
+                <i data-lucide="cloud" class="icone" aria-hidden="true"></i>
+                <span class="texto-marca">ClimaTempo</span>
+            </a>
+
+            <form class="busca busca-pequena" role="search">
+                <i data-lucide="search" class="icone-busca" aria-hidden="true"></i>
+                <input type="search" placeholder="Pesquisar cidade" aria-label="Pesquisar cidade">
+            </form>
+
+            <nav class="menu">
+                <a href="preview.html">Previsão</a>
+                <a href="planos.html" class="ativo" aria-current="page">Plano</a>
+                <a href="login.html" class="botao-contorno">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container planos">
+
+        <h1>Plano</h1>
+        <p class="texto-auxiliar planos-subtitulo">Compare os recursos e escolha seu plano.</p>
+
+        <section class="painel-planos">
+            <table class="tabela-planos">
+                <thead>
+                    <tr>
+                        <th scope="col">Recursos</th>
+                        <th scope="col">
+                            <span class="plano-nome">Gratuito</span>
+                            <span class="plano-preco">R$ 0/mês</span>
+                        </th>
+                        <th scope="col">
+                            <span class="plano-nome">Premium</span>
+                            <span class="plano-preco">R$ 14,90/mês</span>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Previsão</th>
+                        <td>1 dia</td>
+                        <td>5 dias</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hora a hora</th>
+                        <td>Não incluído</td>
+                        <td>Incluído</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mapas do tempo</th>
+                        <td>Não incluído</td>
+                        <td>Incluído</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cidades favoritas</th>
+                        <td>Até 3</td>
+                        <td>Até 5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Preço mensal</th>
+                        <td>R$ 0/mês</td>
+                        <td>R$ 14,90/mês</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td class="texto-auxiliar-sm">Sem custo</td>
+                        <td><a href="confirmacao.html" class="botao-primario">Assinar</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <aside class="aviso-planos">
+            <strong>Premium: R$ 14,90 por mês</strong>
+            <p class="texto-auxiliar-sm">Renovação mensal automática. Cancele quando quiser pelo seu perfil. Valores de exemplo para fins educacionais.</p>
+        </aside>
+
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="../assets/js/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

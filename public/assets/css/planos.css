@@ -1,0 +1,113 @@
+.menu a.ativo {
+    color: var(--cor-destaque);
+    font-weight: var(--peso-semibold);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.planos {
+    padding-top: 48px;
+    padding-bottom: 40px;
+}
+
+.planos-subtitulo {
+    margin: 12px 0 24px;
+}
+
+.painel-planos {
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    background: var(--cor-superficie-card);
+    overflow-x: auto;
+}
+
+.tabela-planos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-planos th,
+.tabela-planos td {
+    padding: 18px 0;
+    text-align: center;
+    font-weight: var(--peso-regular);
+}
+
+.tabela-planos th:first-child,
+.tabela-planos td:first-child {
+    width: 40%;
+    text-align: left;
+}
+
+.tabela-planos thead th {
+    padding-top: 10px;
+    padding-bottom: 26px;
+}
+
+.tabela-planos thead th:first-child {
+    color: var(--cor-texto-destaque);
+    font-weight: var(--peso-semibold);
+    font-size: var(--fs-auxiliar-lg);
+}
+
+.tabela-planos thead tr,
+.tabela-planos tbody tr:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.tabela-planos tbody th {
+    font-size: var(--fs-auxiliar-lg);
+    color: var(--cor-texto-principal);
+}
+
+.tabela-planos tbody td:nth-child(2) {
+    color: var(--cor-texto-secundario);
+}
+
+.tabela-planos tbody td:nth-child(3) {
+    color: var(--cor-texto-destaque);
+}
+
+.plano-nome {
+    display: block;
+    color: var(--cor-texto-destaque);
+    font-size: var(--fs-condicao);
+    font-weight: var(--peso-semibold);
+}
+
+.plano-preco {
+    color: var(--cor-texto-secundario);
+}
+
+.tabela-planos tfoot td {
+    padding-top: 40px;
+    padding-bottom: 28px;
+}
+
+.aviso-planos {
+    margin-top: 24px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: var(--cor-superficie-elevada);
+}
+
+.aviso-planos strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--cor-texto-destaque);
+    font-size: var(--fs-auxiliar-lg);
+}
+
+@media (max-width: 768px) {
+    .tabela-planos th:first-child,
+    .tabela-planos td:first-child {
+        width: auto;
+        padding-right: 12px;
+    }
+
+    .plano-nome {
+        font-size: var(--fs-corpo);
+    }
+}
