@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão - Clima Tempo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/preview.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="../index.html" class="marca">
+                <i data-lucide="cloud" class="icone" aria-hidden="true"></i>
+                <span class="texto-marca">ClimaTempo</span>
+            </a>
+
+            <form class="busca busca-pequena" role="search">
+                <i data-lucide="search" class="icone-busca" aria-hidden="true"></i>
+                <input type="search" placeholder="Pesquisar cidade" aria-label="Pesquisar cidade">
+            </form>
+
+            <nav class="menu">
+                <a href="preview.html" class="ativo" aria-current="page">Previsão</a>
+                <a href="planos.html">Plano</a>
+                <a href="login.html" class="botao-contorno">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container previsao">
+
+        <section class="clima-atual">
+            <span class="local">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+                Ceará, PI
+            </span>
+
+            <h1 class="clima-cidade">Ceará</h1>
+            <p class="texto-auxiliar-sm">Piauí, Brasil · 20:57 hora local</p>
+
+            <div class="clima-temperatura">
+                <i data-lucide="cloud" class="icone-clima-grande" aria-hidden="true"></i>
+                <span class="texto-temperatura">26°C</span>
+            </div>
+
+            <h2 class="clima-condicao">Algumas nuvens</h2>
+            <p class="texto-descricao">Algumas nuvens no momento, com sensação térmica de 26°. Hoje a máxima é de 26° e a mínima de 26°. Sem chuva significativa prevista nas próximas 24 horas.</p>
+
+            <dl class="metricas">
+                <div>
+                    <dt class="texto-auxiliar-sm">Qualidade do ar</dt>
+                    <dd>Boa</dd>
+                </div>
+                <div>
+                    <dt class="texto-auxiliar-sm">Vento</dt>
+                    <dd>21 km/h</dd>
+                </div>
+                <div>
+                    <dt class="texto-auxiliar-sm">Umidade</dt>
+                    <dd>82%</dd>
+                </div>
+                <div>
+                    <dt class="texto-auxiliar-sm">Visibilidade</dt>
+                    <dd>10 km</dd>
+                </div>
+                <div>
+                    <dt class="texto-auxiliar-sm">Pressão</dt>
+                    <dd>1012 hPa</dd>
+                </div>
+                <div>
+                    <dt class="texto-auxiliar-sm">Ponto de orvalho</dt>
+                    <dd>23°</dd>
+                </div>
+            </dl>
+
+            <p class="texto-auxiliar-sm">Atualizado às 20:57 (horário local da cidade)</p>
+        </section>
+
+        <section class="painel">
+            <h2 class="texto-titulo-secao">Previsão para hoje</h2>
+
+            <div class="previsao-hoje">
+                <div class="dia">
+                    <strong>Hoje · 03/11</strong>
+                    <i data-lucide="cloud" aria-hidden="true"></i>
+                    <span class="dia-temperatura">26° / 26°</span>
+                </div>
+
+                <div class="dia-detalhes">
+                    <h3>Algumas nuvens</h3>
+                    <p class="texto-auxiliar">Chance de chuva: 0%</p>
+                    <p class="texto-auxiliar">Precipitação: 0,0 mm</p>
+                    <p class="texto-auxiliar dia-vento">Vento: 21 km/h</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="painel painel-restrito">
+            <p class="restrito-topo texto-auxiliar-sm">
+                <i data-lucide="lock" aria-hidden="true"></i>
+                Previsão completa · Acesso restrito
+            </p>
+
+            <h2 class="restrito-titulo">Faça login para ver a previsão completa</h2>
+            <p class="texto-auxiliar">Entre na sua conta ou cadastre-se para continuar. Os recursos disponíveis dependem do seu plano.</p>
+
+            <div class="restrito-botoes">
+                <a href="login.html" class="botao-primario">Entrar</a>
+                <a href="cadastro.html" class="botao-contorno">Criar conta</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="../assets/js/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
