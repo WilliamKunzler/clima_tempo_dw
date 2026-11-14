@@ -84,7 +84,7 @@
                     <tr>
                         <td></td>
                         <td class="texto-auxiliar-sm">Sem custo</td>
-                        <td><a href="confirmacao.html" class="botao-primario">Assinar</a></td>
+                        <td><button type="button" class="botao-primario" id="abrir-modal">Assinar</button></td>
                     </tr>
                 </tfoot>
             </table>
@@ -97,10 +97,43 @@
 
     </main>
 
+    <div id="modal-assinatura" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <div class="modal-fundo" data-fechar-modal></div>
+
+        <div class="modal-caixa">
+            <div class="modal-topo">
+                <h2 id="modal-titulo" class="modal-titulo">Confirmar assinatura</h2>
+                <button type="button" class="modal-fechar" aria-label="Fechar" data-fechar-modal>
+                    <i data-lucide="x" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <p class="texto-auxiliar modal-texto">Confira os detalhes antes de assinar o plano Premium do ClimaTempo.</p>
+
+            <div class="modal-resumo">
+                <div class="modal-resumo-topo">
+                    <strong>Premium</strong>
+                    <strong>R$ 14,90/mês</strong>
+                </div>
+                <ul>
+                    <li>Previsão para 5 dias</li>
+                    <li>Previsão hora a hora e mapas</li>
+                    <li>Até 5 cidades favoritas</li>
+                </ul>
+            </div>
+
+            <p class="texto-auxiliar-sm">Cobrança de R$ 14,90 por mês, com renovação automática. Você pode cancelar pelo Perfil. Assinatura de exemplo para fins educacionais.</p>
+
+            <a href="principal.html" class="botao-primario modal-botao">Confirmar assinatura</a>
+            <button type="button" class="botao-contorno modal-botao" data-fechar-modal>Cancelar</button>
+        </div>
+    </div>
+
     <footer class="rodape"></footer>
 
     <script src="../assets/js/lucide.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/planos.js"></script>
 </body>
 
 </html>
