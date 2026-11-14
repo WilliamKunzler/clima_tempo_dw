@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Clima Tempo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/perfil.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="principal.html" class="botao-voltar">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+                Voltar
+            </a>
+        </div>
+    </header>
+
+    <main class="container perfil">
+
+        <h1>Perfil</h1>
+        <p class="texto-auxiliar perfil-subtitulo">Gerencie sua conta, seu plano e suas cidades favoritas.</p>
+
+        <div class="perfil-grade">
+
+            <div class="perfil-coluna">
+                <section class="cartao">
+                    <div class="conta-topo">
+                        <span class="avatar">AS</span>
+                        <h2 class="cartao-titulo">Dados da conta</h2>
+                    </div>
+
+                    <dl class="conta-dados">
+                        <div>
+                            <dt class="texto-auxiliar">Nome</dt>
+                            <dd>Ana Silva</dd>
+                        </div>
+                        <div>
+                            <dt class="texto-auxiliar">E-mail</dt>
+                            <dd>ana.silva@exemplo.com</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <section class="cartao">
+                    <h2 class="cartao-titulo">Plano atual</h2>
+
+                    <div class="plano-topo">
+                        <strong class="plano-nome">Premium</strong>
+                        <span class="selo">Ativo</span>
+                    </div>
+                    <p class="plano-preco">R$ 14,90/mês</p>
+                    <p class="texto-auxiliar">Previsão de 5 dias, hora a hora, mapas e até 5 cidades favoritas.</p>
+
+                    <a href="planos.html" class="botao-contorno plano-botao">Mudar plano</a>
+                </section>
+            </div>
+
+            <section class="cartao">
+                <div class="favoritas-topo">
+                    <h2 class="cartao-titulo">Cidades favoritas</h2>
+                    <span class="texto-auxiliar">5 de 5</span>
+                </div>
+                <p class="texto-auxiliar favoritas-subtitulo">Seus locais salvos no ClimaTempo.</p>
+
+                <ul class="favoritas">
+                    <li class="favorita">
+                        <i data-lucide="star" aria-hidden="true"></i>
+                        <span>Concórdia, SC</span>
+                        <button type="button" class="link-remover">Remover</button>
+                    </li>
+                    <li class="favorita">
+                        <i data-lucide="star" aria-hidden="true"></i>
+                        <span>Ceará, PI</span>
+                        <button type="button" class="link-remover">Remover</button>
+                    </li>
+                    <li class="favorita">
+                        <i data-lucide="star" aria-hidden="true"></i>
+                        <span>Paris, França</span>
+                        <button type="button" class="link-remover">Remover</button>
+                    </li>
+                    <li class="favorita">
+                        <i data-lucide="star" aria-hidden="true"></i>
+                        <span>São Paulo, SP</span>
+                        <button type="button" class="link-remover">Remover</button>
+                    </li>
+                    <li class="favorita">
+                        <i data-lucide="star" aria-hidden="true"></i>
+                        <span>Curitiba, PR</span>
+                        <button type="button" class="link-remover">Remover</button>
+                    </li>
+                </ul>
+
+                <div class="aviso-limite">
+                    <strong>Limite de favoritas atingido</strong>
+                    <p class="texto-auxiliar-sm">Você já tem 5 de 5 cidades no Premium. Remova uma cidade para adicionar outra.</p>
+                </div>
+
+                <form class="adicionar">
+                    <label for="nova-cidade">Adicionar cidade</label>
+                    <input type="search" id="nova-cidade" placeholder="Pesquisar cidade" disabled>
+                    <button type="submit" class="botao-desativado" disabled>Adicionar</button>
+                </form>
+            </section>
+
+        </div>
+
+        <a href="../index.html" class="botao-contorno botao-sair">Sair</a>
+
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="../assets/js/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
