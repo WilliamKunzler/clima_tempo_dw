@@ -8,12 +8,14 @@
     --cor-texto-principal: #E6EBF2;
     --cor-texto-destaque: #FFFFFF;
     --cor-texto-secundario: #9AA6B6;
+    --cor-erro: #F28B82;
 
     --cor-destaque: #5AA9FF;
     --cor-precipitacao: #2F7FD8;
     --cor-temperatura: #F39C33;
     --cor-sensacao-termica: #8E7CF0;
     --cor-qualidade-ar: #2ECC71;
+
 
     --fonte-base: "Segoe UI", system-ui, sans-serif;
 
