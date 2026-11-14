@@ -30,13 +30,13 @@ Páginas:
    ```bash
    git clone <url-do-repositorio>
    ```
-2. Abra o arquivo `public/index.html` no navegador.
+2. Abra o arquivo `docs/index.html` no navegador.
 
 ## Estrutura
 
 ```
 clima_tempo_dw/
-└── public/
+└── docs/
     ├── index.html
     ├── pages/
     └── assets/
