@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta - Clima Tempo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/cadastro.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="../index.html" class="marca">
+                <i data-lucide="cloud" class="icone" aria-hidden="true"></i>
+                <span class="texto-marca">ClimaTempo</span>
+            </a>
+
+            <form class="busca busca-pequena" role="search">
+                <i data-lucide="search" class="icone-busca" aria-hidden="true"></i>
+                <input type="search" placeholder="Pesquisar cidade" aria-label="Pesquisar cidade">
+            </form>
+
+            <nav class="menu">
+                <a href="preview.html">Previsão</a>
+                <a href="planos.html">Plano</a>
+                <a href="login.html" class="botao-contorno">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container login">
+
+        <section class="login-caixa">
+            <h1>Criar conta</h1>
+            <p class="texto-auxiliar login-subtitulo">Preencha seus dados para acessar o ClimaTempo. Todos os campos são obrigatórios.</p>
+
+            <form class="login-form" id="cadastro-form" novalidate>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Ana Silva" autocomplete="name" aria-describedby="erro-nome">
+                <p class="campo-mensagem" id="erro-nome" hidden></p>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="ana.silva@exemplo.com" autocomplete="email" aria-describedby="erro-email">
+                <p class="campo-mensagem" id="erro-email" hidden></p>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Sua senha" autocomplete="new-password" aria-describedby="dica-senha erro-senha">
+                <p class="campo-dica" id="dica-senha">Use pelo menos 8 caracteres.</p>
+                <p class="campo-mensagem" id="erro-senha" hidden></p>
+
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita a senha" autocomplete="new-password" aria-describedby="erro-confirmar-senha">
+                <p class="campo-mensagem" id="erro-confirmar-senha" hidden></p>
+
+                <button type="submit" class="botao-primario">Criar conta</button>
+                <p class="texto-auxiliar-sm cadastro-resumo" id="cadastro-resumo" role="alert" hidden>Revise os campos indicados antes de continuar.</p>
+            </form>
+
+            <p class="texto-auxiliar login-rodape">Já tem uma conta? <a href="login.html">Entrar</a></p>
+        </section>
+
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="../assets/js/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cadastro.js"></script>
+</body>
+
+</html>
