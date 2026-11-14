@@ -6,7 +6,7 @@
 
 ## Integrantes
 
-- André Vicenzi Rigo
+- André Luiz Vicenzi Rigo
 - William Kunzler
 - Yasmin Maria Zerbielli
 
