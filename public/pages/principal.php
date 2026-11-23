@@ -373,29 +373,6 @@ require __DIR__ . '/../../includes/header.php';
             </div>
         </section>
 
-        <section class="painel mapa-painel">
-            <div class="mapa-topo">
-                <h2 class="painel-titulo">Mapa do tempo</h2>
-                <div class="abas">
-                    <button type="button" class="aba">Temperatura</button>
-                    <button type="button" class="aba">Chuva</button>
-                    <button type="button" class="aba">Nuvens</button>
-                    <button type="button" class="aba">Vento</button>
-                    <button type="button" class="aba ativa">Pressão</button>
-                </div>
-            </div>
-
-            <div class="mapa">
-                <i data-lucide="map" aria-hidden="true"></i>
-                <span>Mapa</span>
-            </div>
-
-            <div class="mapa-escala"></div>
-            <div class="mapa-escala-legenda texto-auxiliar-sm">
-                <span>950</span><span>980</span><span>1010</span><span>1030</span><span>1050</span><span>1070</span>
-            </div>
-            <p class="texto-auxiliar-sm">Pressão (hPa)</p>
-        </section>
 
     </main>
 

@@ -555,8 +555,7 @@ button {
     font-weight: var(--peso-bold);
 }
 
-.ar-escala,
-.mapa-escala {
+.ar-escala {
     position: relative;
     height: 6px;
     border-radius: 999px;
@@ -578,8 +577,7 @@ button {
     transform: translate(-50%, -50%);
 }
 
-.ar-escala-legenda,
-.mapa-escala-legenda {
+.ar-escala-legenda {
     display: flex;
     justify-content: space-between;
 }
@@ -635,38 +633,6 @@ button {
 .ar-boa      { color: var(--cor-qualidade-ar); }
 .ar-razoavel { color: #F2C230; }
 
-.mapa-topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.mapa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    height: 380px;
-    margin-top: 14px;
-    border: 1px dashed rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    background: var(--cor-superficie-elevada);
-    color: var(--cor-texto-secundario);
-}
-
-.mapa svg {
-    width: 28px;
-    height: 28px;
-}
-
-.mapa-escala {
-    margin-top: 10px;
-    background: linear-gradient(90deg, #2F3BD8, #2FA8D8, #4CD8B0, #E8D230, #F39C33, #E5483C, #C21F2C);
-}
-
 @media (max-width: 1024px) {
     .resumo-dia {
         grid-template-columns: repeat(4, 1fr);
@@ -711,9 +677,5 @@ button {
 
     .poluentes {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .mapa {
-        height: 260px;
     }
 }
