@@ -1,0 +1,34 @@
+services:
+  web:
+    build: .
+    container_name: clima_web
+    ports:
+      - "8080:80"
+    environment:
+      DB_HOST: db
+      DB_PORTA: "3306"
+      DB_NOME: clima_tempo
+      DB_USUARIO: clima
+      DB_SENHA: clima123
+    volumes:
+      - ./public:/var/www/html:ro
+      - ./includes:/var/www/includes:ro
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:11
+    container_name: clima_db
+    environment:
+      MARIADB_ROOT_PASSWORD: root123
+      MARIADB_DATABASE: clima_tempo
+      MARIADB_USER: clima
+      MARIADB_PASSWORD: clima123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d:ro
+      - dados_db:/var/lib/mysql
+
+volumes:
+  dados_db:
