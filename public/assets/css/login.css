@@ -1,0 +1,106 @@
+.menu .botao-contorno.ativo {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.login {
+    padding-top: 42px;
+    padding-bottom: 170px;
+}
+
+.login-caixa {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    background: var(--cor-superficie-card);
+}
+
+.login-caixa h1 {
+    font-size: 1.6rem;
+}
+
+.login-subtitulo {
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: var(--fs-corpo);
+}
+
+.login-erro {
+    margin-top: 16px;
+    padding: 10px 12px;
+    border: 1px solid var(--cor-erro);
+    border-radius: 8px;
+}
+
+.login-erro[hidden] {
+    display: none;
+}
+
+.login-erro strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--cor-erro);
+    font-size: var(--fs-auxiliar-lg);
+}
+
+.login-erro p {
+    font-size: var(--fs-auxiliar-sm);
+    color: var(--cor-texto-destaque);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.login-form label {
+    margin: 8px 0 6px;
+    color: var(--cor-texto-destaque);
+    font-size: var(--fs-auxiliar-lg);
+    font-weight: var(--peso-semibold);
+}
+
+.login-form input {
+    padding: 11px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    background: var(--cor-superficie-elevada);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.login-form input::placeholder {
+    color: var(--cor-texto-secundario);
+}
+
+.login-form input:focus {
+    border-color: var(--cor-destaque);
+}
+
+.login-form input.campo-erro {
+    border-color: var(--cor-erro);
+}
+
+.login-form button {
+    margin-top: 16px;
+    padding: 11px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-rodape {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: var(--fs-corpo);
+}
+
+.login-rodape a {
+    color: var(--cor-destaque);
+    font-weight: var(--peso-semibold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
