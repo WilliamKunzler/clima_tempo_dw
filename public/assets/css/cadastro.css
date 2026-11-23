@@ -1,0 +1,27 @@
+.campo-dica,
+.campo-mensagem {
+    margin-top: 6px;
+    font-size: var(--fs-auxiliar-sm);
+}
+
+.campo-dica {
+    color: var(--cor-texto-secundario);
+}
+
+.campo-mensagem {
+    color: var(--cor-erro);
+}
+
+.campo-mensagem[hidden],
+.cadastro-resumo[hidden] {
+    display: none;
+}
+
+.login-form input + .campo-dica,
+.login-form input + .campo-mensagem {
+    margin-top: 10px;
+}
+
+.cadastro-resumo {
+    margin-top: 16px;
+}
