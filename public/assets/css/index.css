@@ -1,0 +1,185 @@
+.hero {
+    padding: 72px 0 40px;
+    text-align: center;
+}
+
+.hero-titulo {
+    margin-bottom: 28px;
+    font-size: 2rem;
+}
+
+.atalhos {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 24px;
+}
+
+.atalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--fs-auxiliar-lg);
+}
+
+.atalho-icone {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    background: var(--cor-superficie-card);
+    transition: border-color 0.2s;
+}
+
+.atalho-icone svg {
+    width: 20px;
+    height: 20px;
+}
+
+.atalho:hover .atalho-icone {
+    border-color: var(--cor-destaque);
+}
+
+.feed {
+    padding-bottom: 40px;
+}
+
+.feed-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filtro {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.icone-filtro {
+    width: 14px;
+    height: 14px;
+}
+
+.feed-grade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.card {
+    min-height: 330px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    background: var(--cor-superficie-card);
+    overflow: hidden;
+}
+
+.card-titulo {
+    margin: 10px 0 14px;
+    font-size: var(--fs-titulo-secao);
+}
+.card-clima {
+    padding: 20px;
+}
+
+.card-clima-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-clima-cidade {
+    font-size: var(--fs-titulo-secao);
+}
+
+.card-clima-temperatura {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 14px 0 22px;
+}
+
+.card-clima-temperatura .texto-temperatura {
+    font-size: 3.4rem;
+    color: var(--cor-texto-destaque);
+}
+
+.icone-clima {
+    width: 52px;
+    height: 52px;
+    stroke-width: 1.25;
+    color: var(--cor-texto-destaque);
+}
+
+.card-clima-atualizado {
+    margin: 10px 0 14px;
+}
+.imagem-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 128px;
+    background: var(--cor-superficie-elevada);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.imagem-placeholder svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.2;
+    color: var(--cor-texto-secundario);
+}
+
+.card-noticia-conteudo {
+    padding: 20px 18px;
+}
+.card-anuncio {
+    padding: 16px 18px;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 0 7px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: var(--fs-auxiliar-sm);
+    color: var(--cor-texto-secundario);
+}
+
+.imagem-anuncio {
+    height: 150px;
+    margin: 12px 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 48px;
+    }
+
+    .hero-titulo {
+        font-size: 1.5rem;
+    }
+
+    .atalhos {
+        gap: 24px;
+    }
+
+    .feed-grade {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feed-vazio {
+    margin-bottom: 16px;
+}
